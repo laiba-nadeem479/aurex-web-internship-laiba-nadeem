@@ -4,7 +4,7 @@
 **Domain:** Web Development (Full-Stack / Frontend)
 **Week:** Week 4 — JS Fundamentals, DOM, Events, Forms & localStorage
 
-**Live Link:** _[Add GitHub Pages / Vercel link here]_
+**Live Link:** https://aurex-web-intern-laiba.vercel.app/
 
 ## Technologies Used
 
