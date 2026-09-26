@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaskNest — Laiba Nadeem</title>
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="app-header">
+        <h1><span class="app-icon" aria-hidden="true">🪺</span> TaskNest</h1>
+        
+      </header>
+
+      <form id="taskForm" class="task-form" novalidate>
+        <div class="form-row">
+          <label for="taskInput" class="visually-hidden">Task description</label>
+          <input
+            type="text"
+            id="taskInput"
+            name="taskInput"
+            placeholder="What do you need to do?"
+            autocomplete="off"
+          />
+          <button type="submit" class="btn btn-primary">Add Task</button>
+        </div>
+        <p id="formError" class="form-error" role="alert"></p>
+      </form>
+
+      <div class="filters" role="group" aria-label="Filter tasks">
+        <button type="button" class="filter-btn active" data-filter="all">
+          All
+        </button>
+        <button type="button" class="filter-btn" data-filter="active">
+          Active
+        </button>
+        <button type="button" class="filter-btn" data-filter="completed">
+          Done
+        </button>
+      </div>
+
+      <ul id="taskList" class="task-list"></ul>
+
+      <p id="emptyMessage" class="empty-message">
+        No tasks yet — add one above to get started.
+      </p>
+    </div>
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
